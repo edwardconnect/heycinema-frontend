@@ -13,7 +13,7 @@ const MovieDetail: React.FC<MovieReview> = (props) => {
                     {props.Released}
                 </Styles.MovieReleaseDate>
                 <Styles.MovieDetailItem>
-                   IMDB Rating {props.imdbRating}
+                   IMDB Rating {props.imdbRating}/10
                 </Styles.MovieDetailItem>
             </Styles.MovieDetailContentWrapper>
         </>
