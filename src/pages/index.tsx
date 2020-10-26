@@ -1,16 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import PageContainer from "../components/layout/PageContainer"
-import Header from "../components/layout/Header/Header"
+// import Header from "../components/layout/Header/Header"
+import HomePage from "../components/home/HomePage/HomePage"
+import { HomePageProvider } from "../contexts/home-page.context"
 
 const IndexPage = () => (
-  <PageContainer>
-    <Header/>
-  </PageContainer>
+  <Layout>
+    <PageContainer>
+      <HomePageProvider>
+        <HomePage />
+      </HomePageProvider>
+    </PageContainer>
+  </Layout>
 )
 
 // const IndexPage = () => (
