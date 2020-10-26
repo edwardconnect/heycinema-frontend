@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
             <Styles.SearchBarSection>
                 <SearchInput />
             </Styles.SearchBarSection>
-            <MovieCardList/>
+            <MovieCardList />
         </>
     );
 };
