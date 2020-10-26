@@ -41,7 +41,7 @@ export const HomePageProvider: React.FC = ({ children }) => {
                 s: searchValue
             }
             const urlParams = new URLSearchParams(paramData)
-            const res = await fetch(`http://www.omdbapi.com/?${urlParams.toString()}`);
+            const res = await fetch(`https://www.omdbapi.com/?${urlParams.toString()}`);
             const data: OmdbSearchResponse = await res.json();
 
             if (data.Response === 'False') {

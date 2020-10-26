@@ -27,7 +27,7 @@ const MovieCard: React.FC<MovieReview> = (props) => {
                 i: props.imdbID
             }
             const urlParams = new URLSearchParams(paramData)
-            const res = await fetch(`http://www.omdbapi.com/?${urlParams.toString()}`);
+            const res = await fetch(`https://www.omdbapi.com/?${urlParams.toString()}`);
             const data: MovieReview = await res.json();
             console.log(data);
             setDetails(data);
