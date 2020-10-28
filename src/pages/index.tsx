@@ -5,7 +5,7 @@ import PageContainer from "../components/layout/PageContainer"
 import HomePage from "../components/home/HomePage/HomePage"
 import { HomePageProvider } from "../contexts/home-page.context"
 
-const IndexPage = () => (
+const IndexPage: React.FC = () => (
   <Layout>
     <PageContainer>
       <HomePageProvider>
